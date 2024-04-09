@@ -1,3 +1,31 @@
+-- this code is modified after forking
+
+-- #################### RUN THESE COMMANDS BEFORE RUNNING THIS SCRIPT
+-- open psql
+-- \c mimic3    
+-- set search_path to mimiciii;
+-- \cd C:/DATA/Tasks/fork-reproducibility-mimic/queries
+-- ##############################
+
+-- Now run 
+-- \i make_all.sql;
+
+
+
+-- \i 'C:/DATA/Tasks/fork-reproducibility-mimic/mimic-code/concepts/echo-data.sql'
+-- \i C:/DATA/Tasks/fork-reproducibility-mimic/mimic-code/concepts/durations/vasopressor-durations.sql
+-- \i C:/DATA/Tasks/fork-reproducibility-mimic/mimic-code/concepts/durations/ventilation-durations.sql
+
+
+
+
+
+
+
+
+
+
+
 -- tables required before generating the data matters tables
 
 \echo 'Step 1 of 3: Generating the mimic-code concepts required'
@@ -25,11 +53,11 @@
 -- here order matters
 \i dm_word_count.sql
 \i dm_obs_count.sql
+\i dm_service.sql
+\i dm_braindeath.sql
 \i dm_cohort.sql
 \i dm_intime_outtime.sql
 -- for the rest of the queries order is unimportant
-\i dm_braindeath.sql
 \i dm_dialysis_start.sql
 \i dm_static_data.sql
-\i dm_service.sql
 \i dm_number_of_notes.sql

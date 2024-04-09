@@ -1,4 +1,9 @@
+# NOTE: This is a forked repository.
+
+- Follow the instructions below and run `\i make-all.sql`. Then run the [notebooks/reproducibility2.ipynb](notebooks/reproducibility2.ipynb) to extract a `.csv` file containing ~50k patients.
+
 # Reproducibility in MIMIC-III
+
 This repository is evaluates the reproducibility of mortality prediction studies in the MIMIC-III database.
 This study was presented at the Machine Learning in Healthcare (MLHC 2017) conference, and you can find the paper [here](http://proceedings.mlr.press/v68/johnson17a.html) ([pdf](http://proceedings.mlr.press/v68/johnson17a/johnson17a.pdf)).
 
@@ -10,7 +15,7 @@ This repository assumes you have the MIMIC-III v1.4 database in a PostgreSQL dat
 
 ## Running the code
 
-First clone this repository recursively: `git clone --recursive https://github.com/alistairewj/reproducibility-mimic.git`.
+First clone this repository recursively: `git clone --recursive https://github.com/hojjatkarami/fork-reproducibility-mimic.git`.
 
 This repository depends on two others:
 
